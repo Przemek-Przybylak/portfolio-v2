@@ -1,0 +1,24 @@
+:root {
+  /* 🎨 Główne kolory */
+  --color-primary: #6d28d9;
+  --color-accent: #10b981;
+  --color-text: #0f0f0f;
+  --color-light: #f8fafc;
+
+  /* 🌄 Gradientowe tła */
+  --gradient-dark: #0f2027;
+  --gradient-light: #2c5364;
+  --gradient-green-start: #165937;
+  --gradient-green-end: #2f855a;
+
+  /* ✨ Kolory akcentowe */
+  --color-warning: #ff8c42;
+  --color-info: #3b82f6;
+  --color-muted: #94a3b8;
+  --color-border: #e2e8f0;
+
+  /* 🧪 Stany interakcji */
+  --hover-accent: #0f766e;
+  --hover-primary: #5b21b6;
+  --disabled: #cbd5e1;
+}
