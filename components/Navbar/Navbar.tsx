@@ -7,7 +7,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <section className="flex flex-row justify-between my-[3%] border-[1px] border-[var(--color-bg)] px-[3%] py-[2%] rounded-xl text-1xl text-bold uppercase tracking-tight">
+    <header className="flex flex-row justify-between my-[3%] border-[1px] border-[var(--color-bg)] px-[3%] py-[2%] rounded-xl text-1xl text-bold uppercase tracking-tight">
       <p>Przemek Przybylak</p>
       <nav>
         {NAV_ITEMS.map((item) => {
@@ -30,6 +30,6 @@ export default function Navbar() {
         <button>english</button>
         <button>mode</button>
       </div>
-    </section>
+    </header>
   );
 }
