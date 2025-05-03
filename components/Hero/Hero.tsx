@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 import Button from "../Button/Button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -30,7 +31,11 @@ export default function Hero() {
           pracuję samodzielnie i jestem gotowy dołączyć do zespołu, by rozwijać
           się dalej w środowisku produkcyjnym.
         </p>
-        <Button>moje projekty</Button>
+        <Button>
+          <Link key="portfolio" href="/portfolio">
+            Zobacz Projekty
+          </Link>
+        </Button>
       </section>
       <section className="flex-1 flex justify-center self-center ">
         <Image
