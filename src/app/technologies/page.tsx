@@ -72,7 +72,7 @@ export default function TechPage() {
         {technologies.map((tech) => (
           <div
             key={tech.name}
-            className="bg-white rounded-xl shadow p-4 text-center hover:shadow-lg transition"
+            className="bg-white rounded-xl shadow p-4 text-center hover:shadow-lg transition hover:scale-105"
           >
             <Image
               src={tech.icon}
