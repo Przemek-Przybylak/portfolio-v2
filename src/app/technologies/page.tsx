@@ -5,61 +5,61 @@ const technologies = [
     name: "React",
     icon: "/images/React.png",
     description:
-      "Tworzę komponenty interfejsu użytkownika, korzystając z hooków, Context API oraz Framer Motion.",
+      "React => Tworzę komponenty interfejsu użytkownika, korzystając z hooków, Context API oraz Framer Motion.",
   },
   {
     name: "Next.js",
     icon: "/images/Next.js.png",
     description:
-      "Buduję aplikacje SSR i SPA z użyciem App Routera, layoutów, dynamicznych routingów i ISR.",
+      "Next.js => Buduję aplikacje SSR i SPA z użyciem App Routera, layoutów, dynamicznych routingów i ISR.",
   },
   {
     name: "JavaScript",
     icon: "/images/JavaScript.png",
     description:
-      "Język podstawowy, którego używam do budowania interakcji, logiki aplikacji i manipulacji danymi.",
+      "Javascript => Język podstawowy, którego używam do budowania interakcji, logiki aplikacji i manipulacji danymi.",
   },
   {
     name: "TypeScript",
     icon: "/images/TypeScript.png",
     description:
-      "Typuję komponenty, API, propsy i funkcje — ułatwia to utrzymanie większych projektów.",
+      "Typescript => Typuję komponenty, API, propsy i funkcje — ułatwia to utrzymanie większych projektów.",
   },
   {
     name: "Node.js",
     icon: "/images/Node.js.png",
     description:
-      "Używam do budowania backendu, obsługi API, autoryzacji i komunikacji z bazą danych.",
+      "Node.js => Używam do budowania backendu, obsługi API, autoryzacji i komunikacji z bazą danych.",
   },
   {
     name: "Redux",
     icon: "/images/Redux.png",
     description:
-      "Stosuję do globalnego zarządzania stanem w większych aplikacjach Reactowych.",
+      "Redux => Stosuję do globalnego zarządzania stanem w większych aplikacjach Reactowych.",
   },
   {
     name: "Tailwind CSS",
     icon: "/images/Tailwind CSS.png",
     description:
-      "Używam do szybkie stylowanie interfejsu z pomocą utility-first CSS.",
+      "Tailwind => Używam do szybkie stylowanie interfejsu z pomocą utility-first CSS.",
   },
   {
     name: "Styled Components",
     icon: "/images/Stylus.png",
     description:
-      "Styluję komponenty przy użyciu CSS-in-JS, z naciskiem na czystość kodu i reużywalność.",
+      "Styled-Components => Styluję komponenty przy użyciu CSS-in-JS, z naciskiem na czystość kodu i reużywalność.",
   },
   {
     name: "SASS",
     icon: "/images/SASS.png",
     description:
-      "Używam głównie do stylowania komponentów w projektach legacy lub tam, gdzie Tailwind nie pasuje.",
+      "SAAS => Używam głównie do stylowania komponentów w projektach legacy lub tam, gdzie Tailwind nie pasuje.",
   },
   {
     name: "Figma",
     icon: "/images/Figma.png",
     description:
-      "Tworzę prototypy UI, diagramy i projektuję interfejsy aplikacji.",
+      "Figma => Tworzę prototypy UI, diagramy i projektuję interfejsy aplikacji.",
   },
 ];
 
@@ -72,7 +72,8 @@ export default function TechPage() {
         {technologies.map((tech) => (
           <div
             key={tech.name}
-            className="bg-white rounded-xl shadow p-4 text-center hover:shadow-lg transition hover:scale-105"
+            className="bg-[var(--color-light)] rounded-xl shadow p-4 text-center 
+            hover:shadow-lg transition hover:scale-105"
           >
             <Image
               src={tech.icon}
