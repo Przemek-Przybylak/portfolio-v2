@@ -50,7 +50,37 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-      <section className="w-1/2 ">form</section>
+      <section className="w-1/2 ">
+        <div>
+          <h2>Formularz Kontaktowy</h2>
+          <form className="flex flex-col gap-4">
+            <label htmlFor="name">Imię</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Wpisz swoje imię i nazwisko"
+              required
+            />
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Wpisz swój adres email"
+              required
+            />
+            <label htmlFor="message">Wiadomość</label>
+            <textarea
+              id="message"
+              name="message"
+              rows={4}
+              placeholder="Wpisz swoją wiadomość"
+              required
+            ></textarea>
+          </form>
+        </div>
+      </section>
     </main>
   );
 }
