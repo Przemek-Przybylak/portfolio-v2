@@ -1,4 +1,6 @@
 import { TiMessageTyping } from "react-icons/ti";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
 
 export default function ContactPage() {
   return (
@@ -18,12 +20,34 @@ export default function ContactPage() {
           <p>Napisz</p>
           <p>Odwiedź</p>
           <a
-            className="lowercase"
+            className="lowercase text-[var(--color-muted)] hover:text-gray-500"
             href="mailto:przemyslaw.przybylak2@gmail.com"
           >
             przemyslaw.przybylak2@gmail.com
           </a>
-          <p>contact</p>
+          <div className="flex space-x-4 text-2xl">
+            <a
+              href="https://github.com/Przemek-Przybylak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="w-6 h-6 hover:text-gray-800" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/przemekprzybylak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="w-6 h-6 text-blue-300 hover:text-blue-400" />
+            </a>
+            <a
+              href="https://vercel.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiVercel className="w-6 h-6 text-black hover:text-gray-800" />
+            </a>
+          </div>
         </div>
       </section>
       <section className="w-1/2 ">form</section>
