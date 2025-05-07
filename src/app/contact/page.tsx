@@ -4,8 +4,8 @@ import { SiVercel } from "react-icons/si";
 
 export default function ContactPage() {
   return (
-    <main className="w-full  m-0 py-20 grid grid-cols-2 gap-10">
-      <section className="flex items-center justify-center flex-col gap-20 uppercase">
+    <main className="w-full  m-0 py-15 grid grid-cols-2 gap-10">
+      <section className="flex items-center justify-start flex-col gap-20 uppercase">
         <div
           className="flex w-full justify-evenly flex-col gap-10
        text-2xl"
@@ -50,12 +50,13 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-      <section className="w-1/2 ">
+      <section>
         <div>
-          <h2>Formularz Kontaktowy</h2>
-          <form className="flex flex-col gap-4">
+          <h2 className="text-2xl">Formularz Kontaktowy</h2>
+          <form className="flex flex-col gap-2">
             <label htmlFor="name">Imię</label>
             <input
+              className="border-1 border-[var(--color-muted)] rounded-md p-2"
               type="text"
               id="name"
               name="name"
@@ -64,6 +65,7 @@ export default function ContactPage() {
             />
             <label htmlFor="email">Email</label>
             <input
+              className="border-1 border-[var(--color-muted)] rounded-md p-2"
               type="email"
               id="email"
               name="email"
@@ -72,6 +74,7 @@ export default function ContactPage() {
             />
             <label htmlFor="message">Wiadomość</label>
             <textarea
+              className="border-1 border-[var(--color-muted)] rounded-md p-2"
               id="message"
               name="message"
               rows={4}
