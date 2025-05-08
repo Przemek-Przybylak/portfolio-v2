@@ -1,6 +1,7 @@
 import { TiMessageTyping } from "react-icons/ti";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
+import Form from "./Form";
 
 export default function ContactPage() {
   return (
@@ -53,35 +54,7 @@ export default function ContactPage() {
       <section>
         <div>
           <h2 className="text-2xl">Formularz Kontaktowy</h2>
-          <form className="flex flex-col gap-2">
-            <label htmlFor="name">Imię</label>
-            <input
-              className="border-1 border-[var(--color-muted)] rounded-md p-2"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Wpisz swoje imię i nazwisko"
-              required
-            />
-            <label htmlFor="email">Email</label>
-            <input
-              className="border-1 border-[var(--color-muted)] rounded-md p-2"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Wpisz swój adres email"
-              required
-            />
-            <label htmlFor="message">Wiadomość</label>
-            <textarea
-              className="border-1 border-[var(--color-muted)] rounded-md p-2"
-              id="message"
-              name="message"
-              rows={4}
-              placeholder="Wpisz swoją wiadomość"
-              required
-            ></textarea>
-          </form>
+          <Form />
         </div>
       </section>
     </main>
