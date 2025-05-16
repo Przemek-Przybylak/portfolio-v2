@@ -37,7 +37,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       {/* Linki */}
       <div className="mt-4 flex gap-4 ">
         <a
-          href={project.repoUrl}
+          href={project.html_url}
           target="_blank"
           rel="noopener noreferrer"
           className="text-[var(--gradient-green-end)] hover:text-[var(--color-accent)] underline"
