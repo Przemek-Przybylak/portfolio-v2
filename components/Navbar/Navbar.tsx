@@ -7,7 +7,13 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="flex flex-row justify-between my-[3%] border-[1px] border-[var(--color-bg)] px-[3%] py-[2%] rounded-xl text-1xl text-bold uppercase tracking-tight">
+    <header
+      className="flex flex-row justify-between items-center
+     md:my-[3%] px-[3%] py-[2%]
+      border-[1px] border-[var(--color-bg)]  rounded-xl 
+    text-[10px] md:text-[20px] text-bold uppercase tracking-tight text-bold
+    "
+    >
       <p>Przemek Przybylak</p>
       <nav>
         {NAV_ITEMS.map((item) => {
@@ -16,7 +22,7 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`relative px-4 py-2 rounded-md transition-all hover:text-[var(--hover-accent)] ${
+              className={`relative md:px-4 md:py-2 px-2 py-1 rounded-md transition-all hover:text-[var(--hover-accent)] ${
                 isActive ? "text-[var(--color-primary)] font-semibold" : ""
               }`}
             >

@@ -5,18 +5,18 @@ import { MdOutlinePhoneAndroid } from "react-icons/md";
 
 export default function ContactPage() {
   return (
-    <main className="w-full  m-0 py-15 flex gap-10">
+    <main className="w-full  m-0 md:py-15 py-5 flex gap-10 justify-center md:justify-start">
       <section className="flex items-center justify-start flex-col gap-20 uppercase">
         <div
           className="flex w-full justify-evenly flex-col gap-10
-       text-2xl"
+        text-1xl md:text-2xl"
         >
           <div className="inline-flex space-x-2">
             <h1>Chcesz porozmawiać o projekcie?</h1>
             <TiMessageTyping className="text-2xl " />
           </div>
         </div>
-        <div className="w-full m-0 grid grid-flow-col grid-rows-2 auto-cols-max gap-5">
+        <div className="w-full m-0 grid grid-flow-col grid-rows-6 md:grid-rows-2 auto-cols-max  gap-5">
           <p>Napisz</p>
           <a
             className="lowercase text-[var(--color-muted)] hover:text-gray-500"
