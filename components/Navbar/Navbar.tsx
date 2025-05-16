@@ -25,11 +25,7 @@ export default function Navbar() {
           );
         })}
       </nav>
-      <div>
-        {" "}
-        <button>english</button>
-        <button>mode</button>
-      </div>
+      <div> </div>
     </header>
   );
 }
