@@ -3,7 +3,7 @@ export type Project = {
   name: string;
   description: string;
   technologies: string[];
-  repoUrl: string;
+  html_url: string;
   demoUrl: string;
   updated_at: string;
   created_at: string; // jeśli kiedyś dodasz

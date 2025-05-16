@@ -1,6 +1,4 @@
 import { Project } from "@/types/projects";
-import { u } from "framer-motion/client";
-import { features } from "process";
 
 const imageMap: { name: string; imageUrl: string }[] = [
   {
@@ -39,25 +37,34 @@ export async function getProjects(): Promise<Project[]> {
   const data = await response.json();
 
   const sorted = data.sort(
-    (a: any, b: any) =>
+    (a: Project, b: Project) =>
       new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()
   );
 
   const top6 = sorted.slice(0, 6);
 
-  const readyProjects: Project[] = top6.map((repo: any) => {
-    const imageMatch = imageMap.find((img) => img.name === repo.name);
-    return {
-      id: repo.id,
-      name: repo.name,
-      description: repo.description || "No description available",
-      technologies: repo.topics || [],
-      repoUrl: repo.html_url,
-      demoUrl: `https://przemek-przybylak.github.io/${repo.name}/`,
-      updated_at: repo.updated_at,
-      imageUrl: imageMatch ? imageMatch.imageUrl : undefined,
-      featured: true, // Możesz ustawić na true lub false w zależności od potrzeb
-    };
-  });
+  const readyProjects: Project[] = top6.map(
+    ({
+      id,
+      name,
+      description,
+      technologies,
+      html_url,
+      updated_at,
+    }: Project) => {
+      const imageMatch = imageMap.find((img) => img.name === name);
+      return {
+        id: id,
+        name: name,
+        description: description || "No description available",
+        technologies: technologies || [],
+        repoUrl: html_url,
+        demoUrl: `https://przemek-przybylak.github.io/${name}/`,
+        updated_at: updated_at,
+        imageUrl: imageMatch ? imageMatch.imageUrl : undefined,
+        featured: true,
+      };
+    }
+  );
   return readyProjects;
 }
