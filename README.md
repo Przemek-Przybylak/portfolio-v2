@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Portfolio V2
 
-## Getting Started
+Welcome to my first portfolio project built with Next.js and Tailwind CSS!
 
-First, run the development server:
+🚀 Deployment
 
-```bash
+The app is deployed and available at: [https://portfolio-v2-ten-lac.vercel.app/]
+
+🚀 Project Overview
+
+This is my very first project using Next.js (React v19) and Tailwind CSS (v4). Through this project, I learned the fundamentals of server-side rendering, file-based routing, and utility-first styling. I also practiced working with TypeScript to add type safety and improve code maintainability.
+
+🔧 Technologies & Tools
+
+Next.js (v13)
+
+React (v19)
+
+Tailwind CSS (v4)
+
+TypeScript
+
+ESLint & Prettier for code quality and formatting
+
+Vercel for deployment
+
+Additional technologies used:
+
+CSS Modules / Global Styles
+
+React Hooks (useState, useEffect)
+
+Next/Image for optimized image loading
+
+Next/Head for SEO and metadata management
+
+🎯 Key Features
+
+Responsive Design: Mobile-first layout that adapts seamlessly to all screen sizes.
+
+Server-Side Rendering: Fast page loads and SEO-friendly content.
+
+Dynamic Routing: Clean URL structure for different sections (Home, About, Projects, Contact).
+
+Dark Mode Support: Toggle between light and dark themes using Tailwind CSS.
+
+Contact Form: Simple contact form built with React and TypeScript, ready for API integration.
+
+📦 Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/Przemek-Przybylak/portfolio-v2.git
+cd portfolio-v2
+
+Install dependencies:
+
+npm install
+
+# or
+
+yarn install
+
+Run the development server:
+
 npm run dev
+
 # or
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📝 What I Learned
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Next.js Basics: Pages, layouts, API routes, and server-side rendering.
 
-## Learn More
+Tailwind CSS: Utility-first styling and customizing the design system.
 
-To learn more about Next.js, take a look at the following resources:
+TypeScript: Defining interfaces, typing React components, and leveraging type checking.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Best Practices: Linting, formatting, and folder structure for scalable projects.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📞 Contact & Socials
 
-## Deploy on Vercel
+GitHub: Przemek-Przybylak
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+LinkedIn: Your LinkedIn Profile
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for checking out my portfolio! I'm excited to continue improving my front-end skills and take on new challenges in React and Next.js development.
