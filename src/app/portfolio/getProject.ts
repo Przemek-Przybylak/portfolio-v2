@@ -1,4 +1,5 @@
 import { Project } from "@/types/projects";
+import { image } from "framer-motion/client";
 
 const imageMap: { name: string; imageUrl: string }[] = [
   {
@@ -24,6 +25,10 @@ const imageMap: { name: string; imageUrl: string }[] = [
   {
     name: "quiz",
     imageUrl: "/images/quiz.png",
+  },
+  {
+    name: "To-Do-List-React",
+    imageUrl: "/images/To-Do-List-React.png",
   },
 ];
 
