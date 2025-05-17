@@ -50,7 +50,7 @@ const technologies = [
       "Styled-Components => Styluję komponenty przy użyciu CSS-in-JS, z naciskiem na czystość kodu i reużywalność.",
   },
   {
-    name: "SASS",
+    name: "Sass",
     icon: "/images/SASS.png",
     description:
       "SAAS => Używam głównie do stylowania komponentów w projektach legacy lub tam, gdzie Tailwind nie pasuje.",
