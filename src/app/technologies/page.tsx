@@ -59,7 +59,7 @@ const technologies = [
     name: "Figma",
     icon: "/images/Figma.png",
     description:
-      "Figma => Tworzę prototypy UI, diagramy i projektuję interfejsy aplikacji.",
+      "Figma => Używam do idealnego odwzorowywania projektów graficznych w kodzie.",
   },
 ];
 
