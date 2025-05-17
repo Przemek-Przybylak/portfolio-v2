@@ -1,5 +1,4 @@
 import { Project } from "@/types/projects";
-import { image } from "framer-motion/client";
 
 const imageMap: { name: string; imageUrl: string }[] = [
   {
