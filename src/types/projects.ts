@@ -9,4 +9,5 @@ export type Project = {
   created_at: string; // jeśli kiedyś dodasz
   imageUrl?: string; // jeśli kiedyś dodasz
   featured?: boolean; // np. do sortowania
+  homepage: string; // jeśli kiedyś dodasz
 };

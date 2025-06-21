@@ -29,6 +29,10 @@ const imageMap: { name: string; imageUrl: string }[] = [
     name: "To-Do-List-React",
     imageUrl: "/images/To-Do-List-React.png",
   },
+  {
+    name: "kanban-app",
+    imageUrl: "/images/kanban-app.png",
+  },
 ];
 
 export async function getProjects(): Promise<Project[]> {
@@ -55,15 +59,19 @@ export async function getProjects(): Promise<Project[]> {
       technologies,
       html_url,
       updated_at,
+      homepage,
     }: Project) => {
       const imageMatch = imageMap.find((img) => img.name === name);
+      const demo = homepage
+        ? homepage
+        : `https://przemek-przybylak.github.io/${name}/`;
       return {
         id: id,
         name: name,
         description: description || "No description available",
         technologies: technologies || [],
         repoUrl: html_url,
-        demoUrl: `https://przemek-przybylak.github.io/${name}/`,
+        demoUrl: demo,
         updated_at: updated_at,
         imageUrl: imageMatch ? imageMatch.imageUrl : undefined,
         featured: true,

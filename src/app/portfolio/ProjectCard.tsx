@@ -1,5 +1,6 @@
 import { Project } from "@/types/projects";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -31,22 +32,21 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="mt-4 flex gap-4 ">
-        <a
-          href={project.html_url}
+        <Link
+          href={`https://github.com/Przemek-Przybylak/${project.name}/`}
           target="_blank"
-          rel="noopener noreferrer"
           className="text-[var(--gradient-green-end)] hover:text-[var(--color-accent)] underline cursor-pointer"
         >
           GitHub
-        </a>
-        <a
+        </Link>
+        <Link
           href={project.demoUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="text-[var(--gradient-green-end)] hover:text-[var(--color-accent)] underline cursor-pointer"
         >
           Demo
-        </a>
+        </Link>
       </div>
     </div>
   );
