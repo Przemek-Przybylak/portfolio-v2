@@ -83,8 +83,8 @@ Best Practices: Linting, formatting, and folder structure for scalable projects.
 
 📞 Contact & Socials
 
-GitHub: Przemek-Przybylak
+GitHub: https://github.com/Przemek-Przybylak
 
-LinkedIn: Your LinkedIn Profile
+LinkedIn: https://www.linkedin.com/in/przemekprzybylak/
 
 Thank you for checking out my portfolio! I'm excited to continue improving my front-end skills and take on new challenges in React and Next.js development.
