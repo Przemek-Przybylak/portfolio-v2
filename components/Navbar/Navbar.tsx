@@ -14,7 +14,7 @@ export default function Navbar() {
     text-[10px] md:text-[20px] text-bold uppercase tracking-tight text-bold
     "
     >
-      <p>Przemek Przybylak</p>
+      <Link href="/">Przemek Przybylak</Link>
       <nav>
         {NAV_ITEMS.map((item) => {
           const isActive = pathname === item.href && item.href !== "/";
